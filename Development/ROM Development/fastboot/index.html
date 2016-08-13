@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="AndroidTamer Team">
+        
+        <link rel="shortcut icon" href="../../../../../../favicon.ico">
+        
+
+	<title>Fastboot - AndroidTamer</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">AndroidTamer</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Application</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../Application/basics/">Basics</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">ROM Development</a>
+    <ul class="dropdown-menu">
+        
+            
+<li class="active">
+    <a href="./">Fastboot</a>
+</li>
+
+        
+            
+<li >
+    <a href="../heimdall/">Heimdall</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../General/decompile/">Decompile</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../General/multi_devices/">Multi devices</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../General/packages/">Packages</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../General/python_packages/">Python packages</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../General/repo_configure/">Repo configure</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../General/running_emulator/">Running emulator</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../General/screenshot/">Screenshot</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../General/tools_mindmap/">Tools mindmap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Security Assessment <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Automated Analysis</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Security Assessment/Automated Analysis/MobSF/">MobSF</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Security Assessment/Automated Analysis/drozer/">Drozer</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Manual Analysis</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Security Assessment/Manual Analysis/APKTool/">APKTool</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Pentesting</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Security Assessment/Pentesting/Burpsuite/">Burpsuite</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Security Assessment/Pentesting/nikto/">Nikto</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Security Assessment/Pentesting/nmap/">Nmap</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </li>
+                
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#fastboot">fastboot</a></li>
+        
+            <li><a href="#overview">Overview</a></li>
+        
+            <li><a href="#what-is-fastboot-for">What is Fastboot for?</a></li>
+        
+            <li><a href="#fastboot-in-androidtamer">fastboot in AndroidTamer</a></li>
+        
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+
+<h2 id="fastboot">fastboot</h2>
+<h3 id="overview">Overview</h3>
+<p>Android device has 3 important partitions - Boot loader, Recovery, Android ROM. Boot loader loads first and decides the next partition to be loaded (which is usually the Android ROM). Recovery is the mode that is used by device to install updates to Android ROM partition. It is also used while factory resetting the phone. The recovery that comes by default usually has less options and that is why custom recovery modules are available.</p>
+<p>Fastboot on the other hand is a protocol that can be used to connect to the device from a computer over USB and issue updates to the partitions of the device. For example, while I'm in fastboot I can update by recovery partition.</p>
+<p>From <a href="http://www.kingoapp.com/help/fastboot-mode.htm" target="_blank">kingoapp.com</a>, fastboot is defined as:</p>
+<blockquote>
+<p>Fastboot is a protocol that can be used to re-flash partitions on your device (update the flash file system in Android devices). It is this small tool that comes with the Android SDK (Software Developer Kit), which is an alternative to the Recovery Mode for doing installations and updates.</p>
+<p>Not all phones have a fastboot mode that the user can access. It’s turned on with Nexus devices by default as well as a few other phones and tablets and has been enabled by independent Android developers and enthusiasts on some other phones.</p>
+</blockquote>
+<h3 id="what-is-fastboot-for">What is Fastboot for?</h3>
+<p>While in fastboot, you can modify the file system images from a computer over a USB connection. Fastboot mode can start on your device even before Android loads, even under the circumstance when Android isn’t installed at all. And because of that, fastboot mode is useful for quick-updating the firmware, without having to use a recovery mode.</p>
+<h3 id="fastboot-in-androidtamer">fastboot in AndroidTamer</h3>
+<p><center>
+<img alt="image" src="../../../images/fastboot.png" />
+</center></p>
+<blockquote>
+<p><strong>Usage :</strong> </p>
+<p><strong>android@tamer:~$</strong> <code>fastboot [ &lt;option&gt; ] &lt;command&gt;</code></p>
+</blockquote>
+
+</div>
+                
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p><b>(c) AndroidTamer Team</b></p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> - Last updated : 2016-08-13</p>
+        </footer>
+
+        <script src="../../../js/jquery-1.12.3.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
